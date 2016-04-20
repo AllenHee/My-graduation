@@ -11,7 +11,7 @@
 <body>
   <div class="content">
     <div class="bg_pic">
-      <img src="../img/bg.png" alt="">
+      <img src="img/bg.png" alt="">
     </div>
     <p class="content_ttl">WELCOME TO MY CLASS</p>
     <div class="input_form">
@@ -21,20 +21,14 @@
     </div>
     <span class="circle_btn"></span>
     <span class="submit_btn"></span>
+    <div class="self_login">
+      <span class="self_icon"></span>
+      <input class="self_input" type="text" placeholder="PASSWORD">
+      <span class="slef_enter"></span>
+    </div>
   </div>
-  
-  <script src="../js/jquery-1.11.3.min.js"></script>
-  <script>
-    $('.circle_btn').on('click', function () {
-      $('.email_input').css('animation', 'email 2s forwards').removeAttr('readonly');
-      $('.name_input').css('animation', 'name 2s forwards').removeAttr('readonly');
-      $('.message_input').css('animation', 'message 2s forwards').removeAttr('readonly');
-      $('.circle_btn').css('animation', 'circle 1s forwards');
-      setTimeout(function () {
-        $('.submit_btn').css('animation', 'submit 1s forwards');
-      }, 1000)
-    })
-  </script>
-</body>
 
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/js.js"></script>
+</body>
 </html>

@@ -70,26 +70,39 @@ body {
 }
 .circle_btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   left: 50%;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   margin-left: -25px;
   background: url(../img/circle.png) no-repeat;
   background-size: 100%;
   cursor: pointer;
+  transform: scale(1);
+  animation: blinkOne 2s infinite;
 }
 .submit_btn {
   /*display: none;*/
   position: absolute;
-  bottom: 7px;
+  bottom: 47px;
   left: 50%;
-  width: 0;
-  height: 0;
+  width: 78px;
+  height: 78px;
   margin-left: -39px;
   background: url(../img/submit.png) no-repeat;
   background-size: 100%;
   cursor: pointer;
+  transform: scale(0);
+}
+@keyframes blinkOne {
+  50% { 
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 @keyframes email {
   to {
@@ -116,29 +129,23 @@ body {
 }
 @keyframes submit {
   80% {
-    display: block;
-    width: 100px;
-    height: 100px;
+    transform: scale(1.2);
   }
   100% {
-    width: 78px;
-    height: 78px;
+    transform: scale(1);
   }
 }
 @keyframes circle {
   20% {
-    width: 75px;
-    height: 75px;
+    transform: scale(1.4);
   }
   100% {
-    display: none;
-    bottom: 20px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    margin-left: 0;
+    transform: scale(0);
   }
 }
 input:focus {
   outline: none;
+}
+.self_icon {
+  display: inline-block;
 }
