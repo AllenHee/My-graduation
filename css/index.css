@@ -1,0 +1,194 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bg_pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.input_form {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 280px;
+  margin-left: -140px;
+}
+.content_ttl {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 760px;
+  margin-left: -380px;
+  font-size: 60px;
+  color: #fff;
+}
+.input_form input {
+  position: absolute;
+  width: 182px;
+  padding-left: 100px;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+}
+.input_form :-ms-input-placeholder {
+  color: #fff;
+}
+.input_form ::-webkit-input-placeholder {
+  color: #fff;
+}
+.name_input {
+  top: 0;
+  left: 80px;
+  transform: rotateZ(60deg);
+}
+.email_input {
+  top: 0;
+  right: 80px;
+  transform: rotateZ(-60deg);
+}
+.message_input {
+  top: 116px;
+}
+.circle_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+  margin-left: -25px;
+  background: url(../img/circle.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  transform: scale(1);
+  animation: blinkOne 2s infinite;
+}
+.submit_btn {
+  /*display: none;*/
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  width: 78px;
+  height: 78px;
+  margin-left: -39px;
+  background: url(../img/submit.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  transform: scale(0);
+}
+@keyframes blinkOne {
+  50% { 
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes email {
+  to {
+    right: 0;
+    top: 55px;
+    width: 272px;
+    padding-left: 10px;
+    transform: rotateZ(0);
+  }
+}
+@keyframes name {
+  to {
+    width: 272px;
+    padding-left: 10px;
+    transform: rotateZ(0);
+    left: 0;
+  }
+}
+@keyframes message {
+  to {
+    width: 272px;
+    padding-left: 10px;
+  }
+}
+@keyframes submit {
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes circle {
+  20% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+input:focus {
+  outline: none;
+}
+.self_login {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.self_icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/icon.png) no-repeat 0 -50px;
+}
+.self_input {
+  width: 0;
+  height: 50px;
+  padding-left: 0;
+  background: url(../img/icon.png) no-repeat;
+  border: 0;
+  vertical-align: top;
+  color: #fff;
+}
+.self_input:-ms-input-placeholder {
+  color: #fff;
+}
+.self_input::-webkit-input-placeholder {
+  color: #fff;
+}
+.slef_enter {
+  display: inline-block;
+  width: 0;
+  height: 50px;
+  background: url(../img/icon.png) no-repeat 0 -100px;
+}
+@keyframes Pwdinput {
+  to {
+    width: 165px;
+    padding-left: 30px;
+  }
+}
+@keyframes enter {
+  to {
+    width: 50px;
+  }
+}
+@keyframes icon {
+  to {
+    transform: rotatez(-360deg);
+  }
+}
