@@ -1,0 +1,57 @@
+.portrait {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 510px;
+    margin-top: -255px;
+}
+.portrait_l {
+    float: left;
+    width: 50px;
+    padding: 0 85px;
+    font-size: 60px;
+    line-height: 65px;
+    word-break: break-all;
+    font-weight: 200;
+    text-align: center;
+}
+.portrait_r {
+    display: table-cell;
+    min-width: 1129px;
+    max-width: 1600px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.portrait_r_ul {
+    width: 9999px;
+}
+.portrait_l span {
+    font-size: 70px;
+    font-weight: 500;
+}
+.portrait_show_item {
+    float: left;
+    height: 165px;
+}
+.portrait_show_item img {
+    height: 165px;
+    filter: grayscale(100%); 
+    -webkit-filter: grayscale(100%); 
+}
+.myName {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 250px;
+    height: 90px;
+    background-color: #000;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+}
+.myName span {
+    font-size: 65px;
+    font-weight: 500;
+}
