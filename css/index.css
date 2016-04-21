@@ -80,7 +80,6 @@ body {
   animation: blinkOne 2s infinite;
 }
 .submit_btn {
-  /*display: none;*/
   position: absolute;
   bottom: 47px;
   left: 50%;
@@ -150,19 +149,25 @@ input:focus {
   right: 5%;
 }
 .self_icon {
-  display: inline-block;
+  position: absolute;
+  top: 5%;
+  right: 5%;
   width: 50px;
   height: 50px;
   background: url(../img/icon.png) no-repeat 0 -50px;
 }
 .self_input {
-  width: 0;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 165px;
   height: 50px;
   padding-left: 0;
   background: url(../img/icon.png) no-repeat;
   border: 0;
   vertical-align: top;
   color: #fff;
+  transform: scale(0);
 }
 .self_input:-ms-input-placeholder {
   color: #fff;
@@ -171,24 +176,29 @@ input:focus {
   color: #fff;
 }
 .slef_enter {
-  display: inline-block;
-  width: 0;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 50px;
   height: 50px;
   background: url(../img/icon.png) no-repeat 0 -100px;
+  transform: scale(0);
 }
 @keyframes Pwdinput {
   to {
-    width: 165px;
+    transform: scale(1);
     padding-left: 30px;
+    margin-right: 55px;
   }
 }
 @keyframes enter {
   to {
-    width: 50px;
+    transform: scale(1);
   }
 }
 @keyframes icon {
   to {
     transform: rotatez(-360deg);
+    margin-right: 255px;
   }
 }

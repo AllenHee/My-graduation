@@ -1,0 +1,154 @@
+/*个人信息*/
+.personMsg {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 600px;
+    margin: -300px 0 0 -500px;
+}
+.message_div {
+    border-left: 1px dashed #070201;
+}
+.message_l {
+    float: left;
+    padding-top: 30px;
+}
+.message_ttl {
+    margin-left: -19px;
+    margin-bottom: -10px;
+    font-size: 36px;
+}
+.message_ttl i {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-right: 20px;
+    background: url(../img/11.png) no-repeat;
+}
+.message_l_div {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 60px;
+    margin-left: -6px;
+    font-size: 18px;
+    line-height: 35px;
+}
+.message_l_div i {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background: url(../img/11.png) no-repeat 0 -44px;
+}
+.message_r {
+    float: right;
+    width: 500px;
+    color: #666;
+    padding-top: 30px;
+    text-align: center;
+}
+.message_r img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+.message_name {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+.message_r p {
+    font-size: 18px;
+    line-height: 35px;
+}
+.exp_label {
+    margin: 30px 0;
+}
+
+
+/*个人相册*/
+.personImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.album {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 730px;
+  height: 480px;
+  margin-top: -240px;
+  margin-left: -365px;
+  text-align: center;
+}
+.album_ttl {
+  margin-bottom: 75px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+.album_ttl span {
+  font-size: 63px;
+}
+.album_show {
+  height: 340px;
+  padding-right: 20px;
+  overflow-y: auto;
+  /*-webkit-scrollbar-face-color: #BED8EB;
+  scrollbar-face-color: #BED8EB;
+  -webkit-scrollbar-shadow-color: #92C0D1;
+  scrollbar-shadow-color: #92C0D1;
+  -webkit-scrollbar-highlight-color: #92C0D1;
+  scrollbar-highlight-color: #92C0D1;
+  -webkit-scrollbar-3dlight-color: #92C0D1;
+  scrollbar-3dlight-color: #92C0D1;
+  -webkit-scrollbar-track-color: #BED8EB;
+  scrollbar-track-color: #BED8EB;
+  -webkit-scrollbar-arrow-color: #92C0D1;
+  scrollbar-arrow-color: #92C0D1;*/
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border: 1px #808080 solid;
+  border-radius: 10px;
+  background: #999;
+}
+::-webkit-scrollbar-track {
+  border: 1px #d3d3d3 solid;
+  box-shadow: 0px 0px 3px #dfdfdf inset;
+  border-radius: 10px;
+  background: #eee;
+}
+.album_show_item {
+  height: 65px;
+  margin-bottom: 20px;
+}
+.album_show_item span {
+  font-size: 71px;
+  line-height: 65px;
+  color: #fff;
+  text-align: right;
+}
+.album_show_item_img {
+  float: right;
+  width: 485px;
+  height: 65px;
+  overflow: hidden;
+}
+.album_show_item_left .album_show_item_img {
+  float: left;
+}
