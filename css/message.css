@@ -105,18 +105,6 @@
   height: 340px;
   padding-right: 20px;
   overflow-y: auto;
-  /*-webkit-scrollbar-face-color: #BED8EB;
-  scrollbar-face-color: #BED8EB;
-  -webkit-scrollbar-shadow-color: #92C0D1;
-  scrollbar-shadow-color: #92C0D1;
-  -webkit-scrollbar-highlight-color: #92C0D1;
-  scrollbar-highlight-color: #92C0D1;
-  -webkit-scrollbar-3dlight-color: #92C0D1;
-  scrollbar-3dlight-color: #92C0D1;
-  -webkit-scrollbar-track-color: #BED8EB;
-  scrollbar-track-color: #BED8EB;
-  -webkit-scrollbar-arrow-color: #92C0D1;
-  scrollbar-arrow-color: #92C0D1;*/
 }
 ::-webkit-scrollbar {
   width: 8px;
