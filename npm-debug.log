@@ -1,6 +1,6 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Users\\Administrator\\Desktop\\ConEmu\\plugins\\node\\node.exe',
-1 verbose cli   'C:\\Users\\Administrator\\Desktop\\ConEmu\\plugins\\node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli [ 'D:\\ConEmu\\plugins\\node\\node.exe',
+1 verbose cli   'D:\\ConEmu\\plugins\\node\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'start' ]
 2 info using npm@3.8.6
 3 info using node@v5.9.1
@@ -9,17 +9,17 @@
 6 silly lifecycle allen@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle allen@1.0.0~start: allen@1.0.0
 8 verbose lifecycle allen@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle allen@1.0.0~start: PATH: C:\Users\Administrator\Desktop\ConEmu\plugins\node\node_modules\npm\bin\node-gyp-bin;D:\graduation\node_modules\.bin;C:\Users\Administrator\Desktop\ConEmu\plugins\node;C:\Users\Administrator\Desktop\ConEmu\plugins\aria2;C:\Users\Administrator\Desktop\ConEmu\plugins\mpv;D:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\Desktop\ConEmu\plugins\node;C:\Users\Administrator\Desktop\ConEmu\plugins\git-for-windows\usr\bin;C:\Users\Administrator\Desktop\ConEmu\plugins\git-for-windows\bin;C:\Users\Administrator\Desktop\ConEmu\ConEmu\Scripts;C:\Users\Administrator\Desktop\ConEmu;C:\Users\Administrator\Desktop\ConEmu\ConEmu;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;;C:\Program Files (x86)\Microsoft VS Code\bin
+9 verbose lifecycle allen@1.0.0~start: PATH: D:\ConEmu\plugins\node\node_modules\npm\bin\node-gyp-bin;D:\graduation\node_modules\.bin;D:\ConEmu\plugins\node;D:\ConEmu\plugins\aria2;D:\ConEmu\plugins\mpv;D:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;D:\ConEmu\plugins\node;D:\ConEmu\plugins\git-for-windows\usr\bin;D:\ConEmu\plugins\git-for-windows\bin;D:\ConEmu\ConEmu\Scripts;D:\ConEmu;D:\ConEmu\ConEmu;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;;C:\Program Files (x86)\Microsoft VS Code\bin
 10 verbose lifecycle allen@1.0.0~start: CWD: D:\graduation
 11 silly lifecycle allen@1.0.0~start: Args: [ '/d /s /c', 'webpack-dev-server --hot' ]
 12 silly lifecycle allen@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle allen@1.0.0~start: Failed to exec start script
 14 verbose stack Error: allen@1.0.0 start: `webpack-dev-server --hot`
 14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (C:\Users\Administrator\Desktop\ConEmu\plugins\node\node_modules\npm\lib\utils\lifecycle.js:239:16)
+14 verbose stack     at EventEmitter.<anonymous> (D:\ConEmu\plugins\node\node_modules\npm\lib\utils\lifecycle.js:239:16)
 14 verbose stack     at emitTwo (events.js:100:13)
 14 verbose stack     at EventEmitter.emit (events.js:185:7)
-14 verbose stack     at ChildProcess.<anonymous> (C:\Users\Administrator\Desktop\ConEmu\plugins\node\node_modules\npm\lib\utils\spawn.js:24:14)
+14 verbose stack     at ChildProcess.<anonymous> (D:\ConEmu\plugins\node\node_modules\npm\lib\utils\spawn.js:24:14)
 14 verbose stack     at emitTwo (events.js:100:13)
 14 verbose stack     at ChildProcess.emit (events.js:185:7)
 14 verbose stack     at maybeClose (internal/child_process.js:850:16)
@@ -27,7 +27,7 @@
 15 verbose pkgid allen@1.0.0
 16 verbose cwd D:\graduation
 17 error Windows_NT 10.0.10586
-18 error argv "C:\\Users\\Administrator\\Desktop\\ConEmu\\plugins\\node\\node.exe" "C:\\Users\\Administrator\\Desktop\\ConEmu\\plugins\\node\\node_modules\\npm\\bin\\npm-cli.js" "start"
+18 error argv "D:\\ConEmu\\plugins\\node\\node.exe" "D:\\ConEmu\\plugins\\node\\node_modules\\npm\\bin\\npm-cli.js" "start"
 19 error node v5.9.1
 20 error npm  v3.8.6
 21 error code ELIFECYCLE

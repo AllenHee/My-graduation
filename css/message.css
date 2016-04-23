@@ -77,6 +77,7 @@
 
 /*个人相册*/
 .personImg {
+  display: none;
   position: relative;
   width: 100%;
   height: 100%;
@@ -125,13 +126,14 @@
   height: 65px;
   margin-bottom: 20px;
 }
-.album_show_item span {
+.album_show_item>span {
   font-size: 71px;
   line-height: 65px;
   color: #fff;
   text-align: right;
 }
 .album_show_item_img {
+  position: relative;
   float: right;
   width: 485px;
   height: 65px;
@@ -139,4 +141,170 @@
 }
 .album_show_item_left .album_show_item_img {
   float: left;
+}
+.album_wrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4C333333',endColorstr='#4C333333');
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.album_wrap span {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+}
+.album_show_item_left .album_wrap span {
+  right: 395px;
+}
+.album_wrap i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 18px;
+  width: 28px;
+  margin-top: -9px;
+  margin-left: -14px;
+  background: url(../img/icon2.png) no-repeat;
+}
+.threePoint {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+.threePoint li {
+  width: 12px;
+  height: 12px;
+  margin-top: 25px;
+  background: url(../img/close.png) no-repeat;
+  cursor: pointer;
+}
+.threePoint .otherPage {
+  width: 5px;
+  height: 5px;
+  background-position: 0 -59px;
+}
+.threePoint .currentPage {
+  margin-left: -3px;
+  background-position: 0 -42px;
+}
+
+/*赠言*/
+.personMotto {
+  /*display: none;*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.personMotto_cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -500px;
+}
+.personMotto_l {
+  float: left;
+}
+.personMotto_l img {
+  width: 310px;
+  height: 400px;
+}
+.personMotto_r {
+  float: left;
+  width: 600px;
+  padding-top: 60px;
+  margin-left: 50px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #666;
+  text-indent: 2em;
+}
+.personName {
+  margin-top: 60px;
+  text-align: right;
+}
+/*相册预览弹出框*/
+.model {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #6f626d;
+}
+.model_cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 540px;
+  margin-top: -270px;
+  margin-left: -400px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px 5px #999;
+}
+.slider_wrap {
+  position: relative;
+  width: 590px;
+  height: 395px;
+  margin: 40px auto 30px;
+  overflow: hidden;
+}
+.slider {
+  position: absolute;
+  width: 2950px;
+}
+.slider li {
+  float: left;
+  width: 590px;
+  height: 395px;
+}
+.slider li a {
+  display: table-cell;
+  width: 590px;
+  height: 395px;
+  vertical-align: middle;
+  text-align: center;
+}
+.slider li img {
+  max-width: 590px;
+  max-height: 395px;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 45%;
+  width: 28px;
+  height: 44px;
+  background: url(../img/icon2.png) no-repeat;
+  cursor: pointer;
+}
+.prev {
+  left: 10%;
+  background-position: 0 -62px;
+}
+.next {
+  right: 10%;
+  background-position: 0 -18px;
+}
+.imgTtl {
+  line-height: 30px;
+}
+.close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 38px;
+  height: 38px;
+  background: url(../img/close.png) no-repeat;
+  cursor: pointer;
 }
