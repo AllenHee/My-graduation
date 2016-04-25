@@ -3,7 +3,9 @@ var path = require('path');
 module.exports = {
   cache: true,
   entry: {
-    main: './js/main.js',
+    index: './js/index.js',
+    message: './js/message.js',
+    fill: './js/fill.js',
   },
   output: {
     path: './',

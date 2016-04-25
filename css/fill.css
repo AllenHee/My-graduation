@@ -1,0 +1,117 @@
+.background {
+  width: 100%;
+  height: 115%;
+  background: url(../img/Msgbg.png) no-repeat;
+  background-size: cover;
+}
+.messageFill {
+  width: 100%;
+  background-color: #804737;
+}
+.msgFill {
+  width: 950px;
+  margin: 0 auto;
+}
+.ttl_resume {
+  height: 35px;
+  background: url(../img/text.png) no-repeat 0 -45px;
+}
+.msgFill_l {
+  float: left;
+  margin-top: 40px;
+}
+.msgFill_r {
+  float: right;
+}
+.fillGroup {
+  position: relative;
+  margin-bottom: 5px;
+}
+.fill_label {
+  display: inline-block;
+  width: 115px;
+  height: 30px;
+  margin-right: 5px;
+  color: #fff;
+  text-align: right;
+  line-height: 30px;
+}
+.fill_input {
+  width: 285px;
+  height: 28px;
+  padding-left: 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  background-color: rgba(204, 204, 204, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33cccccc',endColorstr='#33cccccc');
+}
+.margin_b {
+  margin-bottom: 40px;
+}
+.headUpload {
+  height: 190px;
+  color: #fff;
+  text-align: center;
+}
+.formUploadImg_preview {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: rgba(204, 204, 204, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33cccccc',endColorstr='#33cccccc');
+}
+.add {
+  font-size: 80px;
+  font-weight: 100;
+}
+.headUpload img {
+  width: 140px;
+  height: 140px;
+}
+.radius_input {
+  display: inherit;
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #fff;
+  font-size: 12px;
+}
+.input_value {
+  position: absolute;
+  top: 9px;
+  left: 50px;
+  padding: 0 5px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #804737;
+}
+.margin_top {
+  margin-top: 60px;
+}
+.radius_input_long {
+  width: 360px;
+}
+.margin_top span {
+  left: 20px;
+}
+.radiu {
+  margin-bottom: 10px;
+}
+.webuploader-element-invisible {
+  display: none;
+}
+/*赠言 开始*/
+.mottoFill_l {
+  float: left;
+}
+.mottoFill_r {
+  float: right;
+}

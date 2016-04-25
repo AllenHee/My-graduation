@@ -11,41 +11,71 @@
   <div class="background"></div>
   <div class="messageFill">
     <!--个人信息填写 开始-->
-    <div class="msgFill">
+    <div class="msgFill clearfix">
+      <h1 class="ttl_resume"></h1>
       <div class="msgFill_l">
         <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
+          <label class="fill_label">外号 : </label><input class="fill_input" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
+          <label class="fill_label">生日 : </label><input class="fill_input" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
+          <label class="fill_label">生肖 : </label><input class="fill_input" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
+          <label class="fill_label">星座 : </label><input class="fill_input" type="text">
+        </div>
+        <div class="fillGroup margin_b">
+          <label class="fill_label">愿望 : </label><input class="fill_input" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
+          <label class="fill_label">最喜欢的人物 : </label><input class="fill_input" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
+          <label class="fill_label">最喜欢的颜色 : </label><input class="fill_input" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
+          <label class="fill_label">最喜欢的歌手 : </label><input class="fill_input" type="text">
+        </div>
+        <div class="fillGroup margin_b">
+          <label class="fill_label">最喜欢的运动 : </label><input class="fill_input" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
-        </div>
-        <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
-        </div>
-        <div class="fillGroup">
-          <label class="fill_label"></label><input class="fill_input" type="text">
+          <label class="fill_label">地址 : </label><input class="fill_input" type="text">
         </div>
       </div>
       <div class="msgFill_r">
-        <div class="headUpload"></div>
+        <div class="headUpload">
+          <div class="formUploadImg">
+            <div class="formUploadImg_preview" id="filePicker">
+              <!--<img ng-src="{{${attrs.vm}.data.${attrs.name} ? dhw.imgurl + ${attrs.vm}.data.${attrs.name} + '_${attrs.size}' + '.jpg' : '//cdn.dreamhiway.com/static/dimg/updefaultlogo.png'}}" ng-if="!${attrs.isrepeatitem}">-->
+              <p class="add">+</p>
+              <span>上传头像</span>
+            </div>
+            <span class="formUploadImg_result"></span>
+          </div>
+        </div>
+        <div class="fillGroup radiu">
+          <input class="radius_input" type="text">
+          <span class="input_value">姓名</span>
+        </div>
+        <div class="fillGroup radiu">
+          <input class="radius_input" type="text">
+          <span class="input_value">手机号码</span>
+        </div>
+        <div class="fillGroup radiu">
+          <input class="radius_input" type="text">
+          <span class="input_value">邮箱</span>
+        </div>
+        <div class="fillGroup radiu">
+          <input class="radius_input" type="text">
+          <span class="input_value">个人主页</span>
+        </div>
+        <div class="fillGroup margin_top">
+          <input class="radius_input radius_input_long" type="text">
+          <span class="input_value">印象标签</span>
+        </div>
       </div>
     </div>
     <!--个人信息填写 结束-->
@@ -53,9 +83,27 @@
     <div class="imgUpload"></div>
     <!--上传相册 结束-->
     <!--赠言填写 开始-->
-    <div class="mottoFill"></div>
+    <div class="mottoFill clearfix">
+      <div class="mottoFill_l">
+        <div class="formUploadImg">
+          <div class="formUploadImg_preview" id="filePicker">
+            <!--<img ng-src="{{${attrs.vm}.data.${attrs.name} ? dhw.imgurl + ${attrs.vm}.data.${attrs.name} + '_${attrs.size}' + '.jpg' : '//cdn.dreamhiway.com/static/dimg/updefaultlogo.png'}}" ng-if="!${attrs.isrepeatitem}">-->
+            <p class="add">+</p>
+            <span>上传头像</span>
+          </div>
+          <span class="formUploadImg_result"></span>
+        </div>
+      </div>
+      <div class="mottoFill_r">
+        <textarea class="mottoTxt"></textarea>
+      </div>
+    </div>
     <!--赠言填写 结束-->
   </div>
+
+  <script src="../js/jquery-1.11.3.min.js"></script>
+  <script src="../js/webuploader.nolog.min.js"></script>
+  <script src="/js/fill.js"></script>
 </body>
 
 </html>
