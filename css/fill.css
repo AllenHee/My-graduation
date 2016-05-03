@@ -111,7 +111,85 @@
 /*赠言 开始*/
 .mottoFill_l {
   float: left;
+  width: 310px;
 }
 .mottoFill_r {
   float: right;
+}
+.mottoFill {
+  width: 980px;
+  margin: 30px auto 50px;
+}
+.mottoFill_ttl {
+  height: 35px;
+  margin: 30px 0;
+  background: url(../img/text.png) no-repeat;
+}
+.mottoFill_l_upload {
+  width: 308px;
+  height: 450px;
+  border: 2px solid #cda3a6;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.mottoFill_l_img {
+  color: #fff;
+  text-align: center;
+}
+.mottoFill_add {
+  width: 69px;
+  height: 71px;
+  margin: 150px auto 40px;
+  background: url(../img/add.png) no-repeat;
+  opacity: 0.8;
+}
+.fillBtn {
+  width: 980px;
+  height: 50px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.mottoFill_word {
+  display: inline-block;
+  width: 100px;
+  opacity: 0.6;
+  font-size: 14px;
+  line-height: 25px;
+}
+.mottoFill_r {
+  position: relative;
+  width: 650px;
+  color: #333;
+}
+.mottoTxt {
+  width: 620px;
+  height: 320px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 60px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.mottoTxt:focus {
+  outline: 0;
+}
+.surplus_word {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.save_btn {
+  width: 90px;
+  height: 35px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #804737;
+  font-size: 18px;
+  font-weight: 600; 
+}
+.save_btn:disabled {
+  background-color: #b48c8d;
 }

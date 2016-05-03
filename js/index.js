@@ -12,3 +12,6 @@ $('.self_icon').on('click', function () {
   $('.slef_enter').css('animation', 'enter 0.2s forwards');
   $('.self_input').css('animation', 'Pwdinput 0.8s forwards 0.2s');
 })
+$('.submit_btn').on('click', function () {
+  window.location.pathname = 'content/personMsg.html'
+})

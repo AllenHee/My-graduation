@@ -80,25 +80,33 @@
     </div>
     <!--个人信息填写 结束-->
     <!--上传相册 开始-->
-    <div class="imgUpload"></div>
+    <div class="imgUpload">
+      <h1></h1>
+      <div></div>
+    </div>
     <!--上传相册 结束-->
     <!--赠言填写 开始-->
     <div class="mottoFill clearfix">
+      <h1 class="mottoFill_ttl"></h1>
       <div class="mottoFill_l">
-        <div class="formUploadImg">
-          <div class="formUploadImg_preview" id="filePicker">
+        <div class="mottoFill_l_upload">
+          <div class="mottoFill_l_img" id="filePicker">
             <!--<img ng-src="{{${attrs.vm}.data.${attrs.name} ? dhw.imgurl + ${attrs.vm}.data.${attrs.name} + '_${attrs.size}' + '.jpg' : '//cdn.dreamhiway.com/static/dimg/updefaultlogo.png'}}" ng-if="!${attrs.isrepeatitem}">-->
-            <p class="add">+</p>
-            <span>上传头像</span>
+            <p class="mottoFill_add"></p>
+            <span class="mottoFill_word">再上传一个美美的pose照</span>
           </div>
           <span class="formUploadImg_result"></span>
         </div>
       </div>
       <div class="mottoFill_r">
         <textarea class="mottoTxt"></textarea>
+        <p class="surplus_word">还可以输入<span>300</span>个字</p>
       </div>
     </div>
     <!--赠言填写 结束-->
+    <div class="fillBtn">
+      <button class="save_btn">保存</button>
+    </div>
   </div>
 
   <script src="../js/jquery-1.11.3.min.js"></script>
