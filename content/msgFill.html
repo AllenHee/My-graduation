@@ -15,13 +15,13 @@
       <h1 class="ttl_resume"></h1>
       <div class="msgFill_l">
         <div class="fillGroup">
-          <label class="fill_label">外号 : </label><input class="fill_input" type="text">
+          <label class="fill_label">外号 : </label><input class="fill_input" id="1" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label">生日 : </label><input class="fill_input" type="text">
+          <label class="fill_label">生日 : </label><input class="fill_input" id="2" type="text">
         </div>
         <div class="fillGroup">
-          <label class="fill_label">生肖 : </label><input class="fill_input" type="text">
+          <label class="fill_label">生肖 : </label><input class="fill_input" id="3" type="text">
         </div>
         <div class="fillGroup">
           <label class="fill_label">星座 : </label><input class="fill_input" type="text">
@@ -81,15 +81,33 @@
     <!--个人信息填写 结束-->
     <!--上传相册 开始-->
     <div class="imgUpload">
-      <h1></h1>
-      <div></div>
+      <h1 class="memory_ttl"></h1>
+      <div class="imgUpload_content">
+        <h1 class="together_ttl"></h1>
+        <div class="imgUpload_album">
+          <ul class="clearfix">
+            <li class="album_item">
+              <div class="formUploadImg album_item_upload">
+                <div class="mottoFill_l_img" id="filePicker">
+                  <!--<img ng-src="{{${attrs.vm}.data.${attrs.name} ? dhw.imgurl + ${attrs.vm}.data.${attrs.name} + '_${attrs.size}' + '.jpg' : '//cdn.dreamhiway.com/static/dimg/updefaultlogo.png'}}" ng-if="!${attrs.isrepeatitem}">-->
+                  <p class="album_add"></p>
+                </div>
+                <span class="formUploadImg_result"></span>
+              </div>
+              <input class="album_remarks" type="text" placeholder="备注">
+            </li>
+            <li class="imgUpload_addMore"><i></i></li>
+          </ul>
+        </div>
+        <p class="hasLoaded">已上传 : <span>5</span>张</p>
+      </div>
     </div>
     <!--上传相册 结束-->
     <!--赠言填写 开始-->
     <div class="mottoFill clearfix">
       <h1 class="mottoFill_ttl"></h1>
       <div class="mottoFill_l">
-        <div class="mottoFill_l_upload">
+        <div class="formUploadImg mottoFill_l_upload">
           <div class="mottoFill_l_img" id="filePicker">
             <!--<img ng-src="{{${attrs.vm}.data.${attrs.name} ? dhw.imgurl + ${attrs.vm}.data.${attrs.name} + '_${attrs.size}' + '.jpg' : '//cdn.dreamhiway.com/static/dimg/updefaultlogo.png'}}" ng-if="!${attrs.isrepeatitem}">-->
             <p class="mottoFill_add"></p>
@@ -111,6 +129,8 @@
 
   <script src="../js/jquery-1.11.3.min.js"></script>
   <script src="../js/webuploader.nolog.min.js"></script>
+  <script src="../js/jquery.mousewheel.js"></script>
+  <script src="../js/perfect-scrollbar.js"></script>
   <script src="/js/fill.js"></script>
 </body>
 

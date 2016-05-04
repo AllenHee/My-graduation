@@ -15,7 +15,7 @@ var $img = $('formUploadImg').find('img');
 var $result = $('formUploadImg').find('.formUploadImg_result');
 var uploader = WebUploader.create({
   auto: true,
-  swf: '//cdn.dreamhiway.com/static/lib/Uploader.swf',
+  swf: './Uploader.swf',
   server: 'd:',
   pick: $pick[0],
   accept: {
@@ -48,3 +48,13 @@ uploader.on('uploadSuccess', (file, res) => {
 uploader.on('uploadError', () => {
   $result.text('上传出错');
 });
+
+
+$('.imgUpload_album').perfectScrollbar();
+
+
+$('#3').on('click', function () {
+  var one = $('#1').val();
+  var two = $('#2').val();
+  $.post('/form', { a: one, b: two }).success(() => {});
+})

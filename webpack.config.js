@@ -1,20 +1,18 @@
 var webpack = require('webpack');
 var path = require('path');
+
 module.exports = {
-  cache: true,
+  // cache: true,
   entry: {
-    index: './js/index.js',
-    message: './js/message.js',
-    fill: './js/fill.js',
+    index: ['webpack-hot-middleware/client?noInfo=true&reload=true', './js/index.js'],
+    message: ['webpack-hot-middleware/client?noInfo=true&reload=true', './js/message.js'],
+    fill: ['webpack-hot-middleware/client?noInfo=true&reload=true', './js/fill.js']
   },
   output: {
-    path: './',
+    path: '/',
+    publicPath: '/',
     filename: 'js/[name].js',
   },
-  devServer: {
-      inline: true,
-      port: 7000
-   },
   externals: [
     {
       jquery: 'window.jQuery'

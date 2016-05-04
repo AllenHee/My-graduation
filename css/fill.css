@@ -129,7 +129,7 @@
   width: 308px;
   height: 450px;
   border: 2px solid #cda3a6;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
 .mottoFill_l_img {
@@ -166,11 +166,11 @@
   height: 320px;
   padding-top: 20px;
   padding-left: 20px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 5px;
   margin-top: 60px;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .mottoTxt:focus {
   outline: 0;
@@ -192,4 +192,103 @@
 }
 .save_btn:disabled {
   background-color: #b48c8d;
+}
+/*相册上传*/
+.imgUpload {
+  width: 870px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+.memory_ttl {
+  height: 35px;
+  margin-left: -60px;
+  background: url(../img/text.png) no-repeat 0 -83px;
+}
+.imgUpload_content {
+  position: relative;
+  width: 820px;
+  height: 350px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.hasLoaded {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+}
+.album_item {
+  float: left;
+  width: 120px;
+  height: 230px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+.together_ttl {
+  height: 19px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  background: url(../img/together.png) no-repeat;
+}
+.album_item_upload {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #af7f7c;
+  cursor: pointer;
+}
+.album_add {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 60px 0;
+  background: url(../img/album_add.png) no-repeat;
+}
+.album_remarks {
+  width: 115px;
+  border: 0;
+  margin-top: 20px;
+  background-color: #fff;
+  text-align: center;
+  color: #333;
+}
+.album_remarks::-webkit-input-placeholder {
+  color: #ccc;
+}
+.imgUpload_addMore {
+  float: left;
+  width: 130px;
+  height: 238px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.imgUpload_addMore i {
+  display: inline-block;
+  width: 69px;
+  height: 71px;
+  margin-left: 30px;
+  margin-top: 85px;
+  background: url(../img/add.png) no-repeat;
+}
+.imgUpload_album {
+  position: relative;
+  width: 820px;
+  height: 245px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.imgUpload_album ul {
+  width: 9999px;
+}
+.imgUpload_album .ps-scrollbar-y-rail {
+  display: none !important;
+}
+.imgUpload_album .ps-scrollbar-x-rail {
+  height: 2px !important;
+}
+.imgUpload_album .ps-scrollbar-x {
+  top: -1px;
+  height: 4px !important;
 }

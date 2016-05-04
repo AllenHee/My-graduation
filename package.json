@@ -10,7 +10,10 @@
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "mongodb": "^2.1.18"
+  },
   "scripts": {
     "start": "webpack-dev-server --hot"
   },
