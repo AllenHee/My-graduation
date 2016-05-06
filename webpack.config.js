@@ -4,9 +4,9 @@ var path = require('path');
 module.exports = {
   // cache: true,
   entry: {
-    index: ['webpack-hot-middleware/client?noInfo=true&reload=true', './js/index.js'],
-    message: ['webpack-hot-middleware/client?noInfo=true&reload=true', './js/message.js'],
-    fill: ['webpack-hot-middleware/client?noInfo=true&reload=true', './js/fill.js']
+    index: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/index.js'],
+    message: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/message.js'],
+    fill: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/fill.js']
   },
   output: {
     path: '/',

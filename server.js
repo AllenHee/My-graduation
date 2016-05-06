@@ -25,11 +25,6 @@ app.use(webpackDevMiddleware(compiler, {
 const webpackHotMiddleware = require('webpack-hot-middleware');
 app.use(webpackHotMiddleware(compiler));
 
-app.post('/form', (request, response) => {
-  console.log(request.body);
-  response.send({ x: 1 });
-});
-
 
 app.listen(app.get('port'), (err) => {
   if(err) {
