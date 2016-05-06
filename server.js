@@ -16,7 +16,7 @@ const webpackDevMiddleware = require('webpack-dev-middleware');
 app.use(webpackDevMiddleware(compiler, {
   stats: {
     colors: true,
-    chunks: false
+    chunks: false,
   },
   noInfo: true,
   publicPath: config.output.publicPath
