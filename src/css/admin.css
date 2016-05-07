@@ -1,0 +1,98 @@
+.adminBg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/adminBg.png);
+  background-size: cover;
+}
+.admin_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1330px;
+  height: 730px;
+  margin-top: -365px;
+  margin-left: -665px;
+}
+.admin_content_l {
+  float: left;
+  width: 180px;
+  height: 100%;
+  border-radius: 25px 0 0 25px;
+  margin-right: 10px;
+  background-color: #313a59;
+  text-align: center;
+}
+.admin_content_c {
+  float: left;
+  width: 945px;
+  margin-right: 10px;
+}
+.admin_content_r {
+  float: left;
+  width: 180px;
+}
+.admin_logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.admin_name {
+  font-size: 12px;
+  color: #fff;
+}
+.createNew {
+  display: inline-block;
+  width: 175px;
+  height: 35px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  line-height: 35px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #525572;
+  text-decoration: none;
+}
+.admin_ttl {
+  height: 280px;
+  border-left: 5px solid #821e35;
+  background-color: #272e46;
+  color: #fff;
+}
+.admin_ttl h3 {
+  display: inline-block;
+  margin-top: 70px;
+  font-weight: 100;
+  font-size: 60px;
+}
+.admin_ttl h4 {
+  font-weight: 100;
+  font-size: 18px;
+}
+.admin_link {
+  width: 100%;
+  height: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.admin_content_route {
+  width: 100%;
+  height: 680px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.admin_content_r_t {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 0 25px 0 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.admin_content_r_b {
+  width: 100%;
+  height: 520px;
+  border-radius: 0 0 25px 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
