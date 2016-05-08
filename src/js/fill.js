@@ -51,10 +51,3 @@ uploader.on('uploadError', () => {
 
 
 $('.imgUpload_album').perfectScrollbar();
-
-
-$('#3').on('click', function () {
-  var one = $('#1').val();
-  var two = $('#2').val();
-  $.post('/form', { a: one, b: two }).success(() => {});
-})
