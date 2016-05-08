@@ -6,7 +6,8 @@ module.exports = {
   entry: {
     index: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/index.js'],
     message: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/message.js'],
-    fill: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/fill.js']
+    fill: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/fill.js'],
+    admin: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/admin.js']
   },
   output: {
     path: '/',
