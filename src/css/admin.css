@@ -228,11 +228,13 @@
   position: relative;
   height: 30px;
   margin-top: 45px;
+  transition: height .5s linear;
 }
 .ap_cont_item_detail {
   position: absolute;
   height: 0;
   overflow: hidden;
+  transition: height .5s linear;
 }
 .ap_cont_item_detail_l {
   float: left;
@@ -296,16 +298,6 @@
 .ap_cont_item-first .verticalLine {
   width: 0;
 }
-@keyframes whiteCirShow {
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes whiteCirHide {
-  to {
-    transform: scale(0);
-  }
-}
 .whiteCir {
   position: absolute;
   left: 21px;
@@ -316,19 +308,28 @@
   border-radius: 50%;
   background-color: #fff;
   transform: scale(1);
+  transition: all 0.5s;
 }
-.current {
-  height: 116px;
+.ap_name {
+  position: absolute;
+  top: 4px;
+  left: 70px;
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.5s;
 }
-.current .ap_cont_item_detail {
-  height: 116px;
+.current .ap_name {
+  top: 40px;
+  left: 50px;
+  color: #000;
+  font-size: 24px;
 }
 .current .whiteCir {
   transform: scale(0);
 }
-.ap_cont_item {
-  transition: height .5s linear;
+.ap_cont_item.current {
+  height: 116px;
 }
-.ap_cont_item.c {
+.current .ap_cont_item_detail {
   height: 116px;
 }
