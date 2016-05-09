@@ -79,11 +79,20 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 .admin_link a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: top;
   color: #fff;
   font-size: 12px;
   text-decoration: none;
-  line-height: 40px;
-  vertical-align: top;
+}
+.admin_link i {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: 0 10px 5px 20px;
+  background: url(../img/adminIcon.png) no-repeat 0 -70px;
 }
 .admin_content_route {
   width: 100%;
@@ -102,4 +111,209 @@
   height: 420px;
   border-radius: 0 0 25px 0;
   background-color: rgba(255, 255, 255, 0.4);
+}
+/*admin-index*/
+.ai_ttl {
+  height: 35px;
+  padding-left: 10px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.ai_ttl span {
+  color: #000;
+  margin-right: 5px;
+}
+.ai_cont_ul {
+  width: 640px;
+  margin: 130px auto 0;
+}
+.ai_cont_item {
+  position: relative;
+  float: left;
+  width: 120px;
+  margin-right: 140px;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 100;
+  color: #2779c3;
+}
+.ai_cont_item a {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-weight: 100;
+  color: #fff;
+  font-family: '雅黑';
+  text-decoration: none;
+}
+.ai_cont_item i {
+  position: absolute;
+  left: 3px;
+  bottom: -15px;
+  width: 114px;
+  height: 57px;
+  background: url(../img/admin_cir.png) no-repeat;
+}
+.ai_cont_item-last {
+  margin: 0;
+}
+/*Create New*/
+.ac_cont {
+  padding-top: 30px;
+  margin-left: 50px;
+}
+.ac_cont_item {
+  color: #ece4ea;
+  margin-bottom: 40px;
+}
+.ac_cont_item label {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.ac_cont_add {
+  display: inline-block;
+  width: 170px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  line-height: 35px;
+  text-decoration: none;
+  color: #fff;
+}
+.ac_cont_input {
+  width: 315px;
+  height: 35px;
+  padding-left: 20px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.ac_cont_input::-webkit-input-placeholder {
+  color: #fff;
+}
+.ac_cont_send {
+  width: 60px;
+  height: 30px;
+  border: 0;
+  border-radius: 3px;
+  margin-left: 35px;
+  background-color: #fff;
+  color: #8f8495;
+}
+.ac_cont_success {
+  display: inline-block;
+  height: 19px;
+  padding-left: 35px;
+  margin-left: 15px;
+  color: #ece4ea;
+  background: url(../img/success.png) no-repeat;
+}
+/*pool*/
+.ap_ttl {
+  padding-top: 10px;
+  margin: 0 0 20px 20px;
+  color: #333;
+  font-size: 14px;
+}
+.ap_ul {
+  padding-left: 50px;
+  overflow: hidden;
+}
+.ap_cont_item {
+  position: relative;
+  height: 30px;
+  margin-top: 45px;
+}
+.ap_cont_item_detail {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+}
+.ap_cont_item_detail_l {
+  float: left;
+  width: 670px;
+  height: 110px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+}
+.ap_cont_item_detail_l_r {
+  float: right;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-right: 35px;
+  margin-top: 15px;
+}
+.transverseLine,
+.cekckDetail,
+.itemDelete {
+  float: left;
+}
+.transverseLine {
+  width: 45px;
+  height: 3px;
+  margin-top: 58px;
+  background-color: #fff;
+}
+.cekckDetail {
+  width: 45px;
+  height: 45px;
+  margin-top: 36px;
+  background: url(../img/adminIcon.png) no-repeat;
+  cursor: pointer;
+}
+.itemDelete {
+  width: 25px;
+  height: 25px;
+  margin-top: 46px;
+  background: url(../img/adminIcon.png) no-repeat 0 -45px;
+  cursor: pointer;
+}
+.ap_cont_item_detail_l_l {
+  float: right;
+  margin-top: 10px;
+  margin-right: 80px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+.verticalLine {
+  position: absolute;
+  top: -45px;
+  left: 35px;
+  width: 3px;
+  height: 45px;
+  background-color: #fff;
+}
+.ap_cont_item-first {
+  margin-top: 0;
+}
+.ap_cont_item-first .verticalLine {
+  width: 0;
+}
+@keyframes whiteCirShow {
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes whiteCirHide {
+  to {
+    transform: scale(0);
+  }
+}
+.whiteCir {
+  position: absolute;
+  left: 21px;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: scale(1);
 }
