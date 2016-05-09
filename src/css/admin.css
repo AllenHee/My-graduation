@@ -317,3 +317,18 @@
   background-color: #fff;
   transform: scale(1);
 }
+.current {
+  height: 116px;
+}
+.current .ap_cont_item_detail {
+  height: 116px;
+}
+.current .whiteCir {
+  transform: scale(0);
+}
+.ap_cont_item {
+  transition: height .5s linear;
+}
+.ap_cont_item.c {
+  height: 116px;
+}
