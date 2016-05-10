@@ -3,7 +3,7 @@ import poolCtrl from './controllers/poolCtrl.js';
 var app = angular.module('admin', ['ui.router']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/pool');
+  $urlRouterProvider.otherwise('/visitor');
   $stateProvider
     .state('index', {
       url: '/index',
@@ -18,6 +18,14 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
       url: '/pool',
       templateUrl: '../../content/admin/admin-pool.html',
       controller: 'poolCtrl'
+    })
+    .state('toDeal', {
+      url: '/toDeal',
+      templateUrl: '../../content/admin/admin-toDeal.html',
+    })
+    .state('visitor', {
+      url: '/visitor',
+      templateUrl: '../../content/admin/admin-visitor.html',
     })
     
     
