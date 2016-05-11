@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   // cache: true,
@@ -28,6 +29,14 @@ module.exports = {
         query: {
             presets: ['es2015']
          }
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style', 'css?sourceMap!postcss')
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loaders: ['url?limit=10000&name=img/uc/[name].[ext]?[hash:7]']
       }
     ]
   },
