@@ -5,13 +5,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   // cache: true,
   entry: {
-    index: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/index.js'],
-    message: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/message.js'],
-    fill: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/fill.js'],
-    admin: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/js/admin.js']
+    index: ['./src/js/index.js'],
+    message: ['./src/js/message.js'],
+    fill: ['./src/js/fill.js'],
+    admin: ['./src/js/admin.js']
   },
   output: {
-    path: '/',
+    path: path.join(__dirname, '/dist/'),
     publicPath: '/',
     filename: 'js/[name].js',
   },

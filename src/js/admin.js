@@ -1,9 +1,9 @@
-import poolCtrl from './controllers/poolCtrl.js';
+import whiteCir from './directive/whiteCir.js';
 
 var app = angular.module('admin', ['ui.router']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/visitor');
+  $urlRouterProvider.otherwise('/index');
   $stateProvider
     .state('index', {
       url: '/index',
@@ -17,7 +17,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     .state('pool', {
       url: '/pool',
       templateUrl: '../../content/admin/admin-pool.html',
-      controller: 'poolCtrl'
+      // controller: 'poolCtrl'
     })
     .state('toDeal', {
       url: '/toDeal',
@@ -27,7 +27,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
       url: '/visitor',
       templateUrl: '../../content/admin/admin-visitor.html',
     })
-    
-    
+
 }])
-  .controller('poolCtrl', poolCtrl);
+  .directive('whiteCir', whiteCir);
+  $('.ap_ul').perfectScrollbar();
